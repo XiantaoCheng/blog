@@ -1,0 +1,76 @@
+<!--
++[返回目录]
+
+LaTeX数学记号::https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
++[打开](,LaTeX数学记号)
+-->
+
+<html>
+  <head><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <p><mathjax style="font-size:1.5em">
+<!--
++[H函数](,fiducial阴影)
+地址::C:\Users\cheng\Dropbox\Struct\Structure1.2.1\Nini\output\paper\spectrometer\shadow1\index.html
++[导出HTML](,fiducial阴影)
+模拟场景:...
++[新建阅读窗口](,模拟场景)
+模拟场景的"影子分析"替换为"模拟场景"
+
+设置电子源(M函数):...
+数据分析(M函数):...
++[新建阅读窗口](,数据分析)
+显示磁场(M函数):...
++[M函数](,显示磁场)
+设置磁场:...
+
+Nini, 打开GEANT4文件(文件)
+Nini, 打开GEANT4
+-->
+<b><u>Simulation condition</u></b><br>
+In the simulation, there are a gas cell, an Al foil, a magnet and an IP. The magnetic field distribution also showed below. 
+<br>
+<img src="C:\Users\cheng\Dropbox\Struct\Structure1.2.1\Nini\output\paper\spectrometer\shadow1\fig1.png" width="1000"><br>
+<img src="C:\Users\cheng\Dropbox\Struct\Structure1.2.1\Nini\output\paper\spectrometer\shadow1\fig2.png" width="1000">
+<br>
+If we assume the magnetic field is of 5 cm width and an uniform magnetic field, the equivalent field intensity is 2.0821488 T, according to GEANT4 simulation. (Maybe because the step length I used for the real magnetic field was wrong)<br>
+
+In simulations, the source is a Gaussian beam with a Gaussian distribution for the spectrum. I want to see the shape of the shadow with different peak energy, divergence and fiducial diameter. <br>
+Here are examples,
+$$
+E_0=1\ GeV,\ \Delta E=5 MeV,\ \sigma=0.01^\circ, d_{f}=0.127\ mm
+$$
+<img src="C:\Users\cheng\Dropbox\Struct\Structure1.2.1\Nini\output\paper\spectrometer\shadow1\fig3.png" width="1000">
+$$
+E_0=1\ GeV,\ \Delta E=5 MeV,\ \sigma=0.1^\circ, d_{f}=0.127\ mm
+$$
+<img src="C:\Users\cheng\Dropbox\Struct\Structure1.2.1\Nini\output\paper\spectrometer\shadow1\fig4.png" width="1000">
+$$
+E_0=1\ GeV,\ \Delta E=100 MeV,\ \sigma=0.1^\circ, d_{f}=0.127\ mm
+$$
+<img src="C:\Users\cheng\Dropbox\Struct\Structure1.2.1\Nini\output\paper\spectrometer\shadow1\fig5.png" width="1000">
+$$
+E_0=10\ GeV,\ \Delta E=100 MeV,\ \sigma=0.1^\circ, d_{f}=0.127\ mm
+$$
+<img src="C:\Users\cheng\Dropbox\Struct\Structure1.2.1\Nini\output\paper\spectrometer\shadow1\fig6.png" width="1000">
+$$
+E_0=10\ GeV,\ \Delta E=1000 MeV,\ \sigma=0.1^\circ, d_{f}=0.127\ mm
+$$
+<img src="C:\Users\cheng\Dropbox\Struct\Structure1.2.1\Nini\output\paper\spectrometer\shadow1\fig7.png" width="1000">
+$$
+E_0=10\ GeV,\ \Delta E=3000 MeV,\ \sigma=0.1^\circ, d_{f}=0.127\ mm
+$$
+<img src="C:\Users\cheng\Dropbox\Struct\Structure1.2.1\Nini\output\paper\spectrometer\shadow1\fig8.png" width="1000">
+
+<!--
+fig.8.(图片):
+fig.8.的宽是"1000"
++[新建阅读窗口](,fig.1)
+Nini, 打开GEANT4
++[H函数](,fiducial阴影)
+数据分析(M函数):...
+-->
+    </mathjax></p>
+  </body>
+</html>
