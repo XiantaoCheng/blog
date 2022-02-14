@@ -1,17 +1,23 @@
 <!--
 +[返回目录](,设备模板)
 +[网页](web,测试网页)
-
+res
 地址::C:\Users\cheng\Documents\GitHub\blog\index.html
 +[保存文本](,测试网页)
 -->
 
+<!--
++[返回目录]
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
+LaTeX数学记号::https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
++[打开](,LaTeX数学记号)
+-->
+
+<html>
+  <head>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<title>CSS Template</title>
+
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -70,136 +76,124 @@ body {
 }
 
 </style>
-</head>
 
 
-
-
+  </head>
 
 
 <body>
-
 <div class="topnav">
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
 </div>
 
+
 <div class="content">
-    <body>
-    <p><mathjax style="font-size:1.5em">
+    <p><mathjax style=\"font-size:1.5em\">
 <!--
-+[H函数](,fiducial阴影)
-地址::res\index.html
-+[导出HTML](,fiducial阴影)
-模拟场景:...
-+[新建阅读窗口](,模拟场景)
-模拟场景的"影子分析"替换为"模拟场景"
++[H函数](,实例分析)
++[设置结构](,实例分析)
 
-设置电子源(M函数):...
-数据分析(M函数):...
-+[新建阅读窗口](,数据分析)
-显示磁场(M函数):...
-+[M函数](,显示磁场)
-设置磁场:...
+match_pts(M函数):...
+记住match_pts(节点)
+calibrationIP(M函数):...
++[修改标题]"calibrationIP"(,calibration)
 
-Nini, 打开GEANT4文件(文件)
-Nini, 打开GEANT4
+13975场景:...
+13975场景的"分析场景"替换为"13975场景"
++[新建阅读窗口](,13975场景)
 -->
-<h2>Simulation condition</h2><br>
-In the simulation, there are a gas cell, an Al foil, a magnet and an IP. The magnetic field distribution also showed below. 
-<br>
-<img src="res\fig1.png" width="1000"><br>
-<img src="res\fig2.png" width="1000">
-<br>
-If we assume the magnetic field is of 5 cm width and an uniform magnetic field, the equivalent field intensity is 2.0821488 T, according to GEANT4 simulation. (Maybe because the step length I used for the real magnetic field was wrong)<br>
 
-In simulations, the source is a Gaussian beam with a Gaussian distribution for the spectrum. I want to see the shape of the shadow with different peak energy, divergence and fiducial diameter. <br>
-Here are examples,
+<h1>Method</h1>
+To calibrate the analysis, I used X-ray shadows. Both transverse and longitudinal positions of the source \((x_o,y_o)\) and the IP \((x_i,y_i)\) were adjusted in the calibrations. And both of them are necessary. <br>
+To evaluate the analysis accuracy, I calculated the launch angles for each shadows from positions and compared their distribution. And I also calculated the shadows of each fiducials based on a same launch angle to compare them with the real shadows. <br>
+<img src="res\fig1.png" width="1000"><br>
+(Scene and shadow projections)<br>
+The longitudinal position of the magnet was also adjusted. It was found that, that position would affect the angle distribution. <br>
+<br><br>
+
+<h1>13975 data</h1>
+<h2>Before calibration</h2>
+The parameters are, 
 $$
-E_0=1\ GeV,\ \Delta E=5 MeV,\ \sigma=0.01^\circ, d_{f}=0.127\ mm
+x_o=-9.5\ cm,\ y_o=0\ cm,\ x_m=0\ cm,\ y_m=0\ cm
+\\
+x_{f1}=121.3\ cm,\ x_{f2}=172.1\ cm,\ x_i=273.3\ cm,\ y_m=0\ cm
+
 $$
-<img src="res\fig3.png" width="1000">
+Here, the position of electron source, the magnet, the 1st set of fiducials, the 2nd set of fiducials and the image plate are \((x_o,y_o)\), \((x_m,y_m)\), \((x_{f1},y_{f1})\), \((x_{f2},y_{f2})\) and \((x_i,y_i)\)<br>
+<img src="res\fig2.png" width="1000"><br>
+<img src="res\fig2.1.png" width="1000"><br>
+(X-ray shadows)<br>
+<img src="res\fig3.png" width="1000"><br>
+(Energy-angle distribution)<br>
+<img src="res\fig4.png" width="1000"><br>
+<img src="res\fig4.1.png" width="1000"><br>
+(Shadow on the IP)<br>
+
+<h2>After calibration</h2>
+The parameters are, 
 $$
-E_0=1\ GeV,\ \Delta E=5 MeV,\ \sigma=0.1^\circ, d_{f}=0.127\ mm
+x_o=-15.7\ cm,\ y_o=-0.63910\ cm,\ x_m=0\ cm,\ y_m=0\ cm
+\\
+x_{f1}=121.3\ cm,\ x_{f2}=172.1\ cm,\ x_i=265.1\ cm,\ y_m=0.18934\ cm
+
 $$
-<img src="res\fig4.png" width="1000">
-$$
-E_0=1\ GeV,\ \Delta E=100 MeV,\ \sigma=0.1^\circ, d_{f}=0.127\ mm
-$$
-<img src="res\fig5.png" width="1000">
-$$
-E_0=10\ GeV,\ \Delta E=100 MeV,\ \sigma=0.1^\circ, d_{f}=0.127\ mm
-$$
-<img src="res\fig6.png" width="1000">
-$$
-E_0=10\ GeV,\ \Delta E=1000 MeV,\ \sigma=0.1^\circ, d_{f}=0.127\ mm
-$$
-<img src="res\fig7.png" width="1000">
-$$
-E_0=10\ GeV,\ \Delta E=3000 MeV,\ \sigma=0.1^\circ, d_{f}=0.127\ mm
-$$
-<img src="res\fig8.png" width="1000">
+<img src="res\fig5.png" width="1000"><br>
+<img src="res\fig5.1.png" width="1000"><br>
+(X-ray shadows)<br>
+<img src="res\fig6.png" width="1000"><br>
+(Energy-angle distribution)<br>
+<img src="res\fig7.png" width="1000"><br>
+<img src="res\fig7.1.png" width="1000"><br>
+(Shadow on the IP)<br>
 <br><br><br>
 
+<h1>Longitudinal calibration</h1>
+<h2>Without the calibration</h2>
+<img src="res\fig8.png" width="1000"><br>
+<img src="res\fig8.1.png" width="1000"><br>
+<h2>With the calibration</h2>
+<img src="res\fig5.png" width="1000"><br>
+<img src="res\fig5.1.png" width="1000"><br>
+<br><br><br>
 
-<b><u>Real data</u></b><br>
-<b>#13975:</b><br>
-<img src="res\fig15.png" width="1000"><br>
-<img src="res\fig16.png" width="1000"><br>
-<img src="res\fig17.png" width="1000"><br>
-<img src="res\fig18.png" width="1000">
-<br><br><br><br><br>
-
-
-
-<b><u>Theoretical results</u></b><br>
-The theoretical results for the shadow shape are, 
+<h1>Magnet position calibration</h1>
 $$
-E_0=1\ GeV,\ \Delta E=100 MeV,\ \sigma=1\ mrad
+x_m=2\ cm
 $$
-<img src="res\fig9.png" width="1000">
+<img src="res\fig10.png" width="1000"><br>
+<img src="res\fig10.1.png" width="1000"><br>
 $$
-E_0=5\ GeV,\ \Delta E=100 MeV,\ \sigma=1\ mrad
+x_m=0\ cm
 $$
-<img src="res\fig10.png" width="1000">
+<img src="res\fig11.png" width="1000"><br>
+<img src="res\fig11.1.png" width="1000"><br>
 $$
-E_0=10\ GeV,\ \Delta E=100 MeV,\ \sigma=1\ mrad
+x_m=3.5\ cm
 $$
-<img src="res\fig11.png" width="1000">
-$$
-E_0=10\ GeV,\ \Delta E=500 MeV,\ \sigma=1\ mrad
-$$
-<img src="res\fig12.png" width="1000">
-$$
-E_0=10\ GeV,\ \Delta E=500 MeV,\ \sigma=5\ mrad
-$$
-<img src="res\fig13.png" width="1000">
-$$
-E_0=10\ GeV,\ \Delta E=500 MeV,\ \sigma=10\ mrad
-$$
-<img src="res\fig14.png" width="1000">
-<br><br><br><br>
-
-
+<img src="res\fig12.png" width="1000"><br>
+<img src="res\fig12.1.png" width="1000"><br>
 
 <!--
-fig.18.(图片):
-fig.18.的宽是"1000"
-+[新建阅读窗口](,fig.14.)
-Nini, 打开GEANT4
-+[H函数](,fiducial阴影)
-数据分析(M函数):...
-真实IP(M函数):...
++[H函数](,实例分析)
+fig.12.1_(图片):
++[设置结构](,fig.1_)
 
-+[H函数](,fiducial阴影)
-Nini, 阴影形状的fiducial散射是什么?
+实例分析=>的(实例分析,_re)->_re"fig"=>+的(_re,+宽)->+宽"1000"
+实例分析=>的(实例分析,宽度)=>+[del](,宽度)
+
+X校正(M函数):...
++[新建阅读窗口](,X校正)
+
+<h2>match_pts(xo,yo,xf,yf,xs,ys)</h2>
+Match points (xf,yf) and (xs,ys), to make the lines from the point pairs gethered most tightly around one of the (xo,yo). <br>
+All (xs,ys) will be matched, while (xf,yf) are not necessary. 
+
 -->
     </mathjax></p>
-  </body>
-
 </div>
-
 
 <div class="footer">
   <p>Footer</p>
@@ -207,9 +201,3 @@ Nini, 阴影形状的fiducial散射是什么?
 
 </body>
 </html>
-
-
-
-<!--
-+[网页](web,设备模板)
--->
