@@ -1,203 +1,252 @@
 <!--
-+[返回目录](,设备模板)
-+[网页](web,测试网页)
-res
++[网页](web,网页PPT模板)
+%PPT
 地址::C:\Users\cheng\Documents\GitHub\blog\index.html
-+[保存文本](,测试网页)
++[保存文本](,测试页面)
+
+原版(html):...
+单页模板:...
+
+onkeypress::https://stackoverflow.com/questions/148361/how-can-i-give-keyboard-focus-to-a-div-and-attach-keyboard-event-handlers-to-it
 -->
 
-<!--
-+[返回目录]
 
-LaTeX数学记号::https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
-+[打开](,LaTeX数学记号)
--->
-
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+
+.mySlides {display: none}
+
+svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+div.window {
+  position: relative;
+    background-color: white;
 
-/* Style the top navigation bar */
-.topnav {
+  width: 95%;
+  # height: 400px;
+  padding-top: 47.5%;
+  left: 2.5%;
+
   overflow: hidden;
-  background-color: #333;
+  border: 2px solid #888888;
+   # cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
+    cursor:url(https://cdn-icons-png.flaticon.com/512/1559/1559148.png), auto;
+
+} 
+
+div.textbox {
+  position: absolute;
+#  border-style: solid;
+#  border-width: 2px;
+  overflow: hidden;
 }
 
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-
-/* Style the content */
-.content {
-  background-color: #fff;
-  padding: 10px;
-}
-
-/*
-+[网页](web,实验室日历模板)
-*/
-
-/* Style the footer */
-.footer {
-  background-color: #333;
-  padding: 10px;
-  margin-top: 20px
-}
-
-.footer p {
-  color: #ddd
+.cursor {
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  # mix-blend-mode: difference;
+  background-color: red;
+  z-index: 10000;
+  border: 2px solid black;
+  height: 30px;
+  width: 30px;
+  transition: all 300ms ease-out;
 }
 
 </style>
+</head>
+<body style="background-color:black">
 
 
-  </head>
+<h2 style="color:white;">PPT</h2>
 
+<div class="window mySlides">
 
-<body>
-<div class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+<svg width=%宽度 viewBox="0 0 1000 500.0"> 
+<rect x="625.0" y="425.0" width="250.0" height="12.5" style="fill:white;stroke:black;stroke-width:5;" />
+<text dominant-baseline="middle" text-anchor="middle" x="750.0" y="431.24999999999994" font-size="30"></text>
+<rect x="625.0" y="50.0" width="250.0" height="12.5" style="fill:white;stroke:black;stroke-width:5;" />
+<text dominant-baseline="middle" text-anchor="middle" x="750.0" y="56.25" font-size="30"></text>
+<polyline points="752,426 753,64 " style="fill:white;stroke:black;stroke-width:5;fill-rule:evenodd;" />
+<polyline points="752,426 631,64 " style="fill:white;stroke:black;stroke-width:5;fill-rule:evenodd;" />
+<polyline points="618,98 622,70 738,417 718,397 738,417 742,389 738,417 622,70 642,90 " style="fill:white;stroke:black;stroke-width:5;fill-rule:evenodd;" />
+<polyline points="648,48 623,36 870,35 845,47 870,35 845,22 870,35 623,36 648,23 " style="fill:white;stroke:black;stroke-width:5;fill-rule:evenodd;" />
+<polyline points="829,103 841,78 844,408 832,383 844,408 857,383 844,408 841,78 854,103 " style="fill:white;stroke:black;stroke-width:5;fill-rule:evenodd;" />
+<polyline points="752,375 752,375 752,375 751,375 751,375 751,375 751,375 751,375 751,375 750,375 750,375 750,375 750,375 750,375 750,375 749,375 749,375 749,375 749,375 749,375 749,375 748,375 748,375 748,375 748,375 748,375 748,375 747,375 747,375 747,375 747,375 747,375 747,375 746,375 746,375 746,375 746,375 746,375 746,375 745,375 745,375 745,375 745,375 745,375 745,375 744,375 744,375 744,375 744,375 744,375 744,375 743,376 743,376 743,376 743,376 743,376 743,376 742,376 742,376 742,376 742,376 742,376 742,376 741,376 741,376 741,376 741,376 741,376 741,376 740,376 740,376 740,376 740,376 740,376 740,376 739,376 739,376 739,376 739,376 739,377 739,377 739,377 738,377 738,377 738,377 738,377 738,377 738,377 737,377 737,377 737,377 737,377 737,377 737,377 736,377 736,377 736,377 736,377 736,377 736,377 " style="fill:white;stroke:black;stroke-width:5;fill-rule:evenodd;" />
+
+ </svg>
+
+<div class="textbox" style="top: 37.79832967623485%;left: 85.67273073306167%;width: auto;height: auto;font-size: 1.5vw;">
+    <mathjax style="font-size:1.5em">
+$$\Delta z$$
+    </mathjax>
 </div>
 
 
-<div class="content">
-    <p><mathjax style=\"font-size:1.5em\">
+<div class="textbox" style="top: -3.8925932560118053%;left: 87.23259519651307%;width: auto;height: auto;font-size: 1.5vw;">
+    <mathjax style="font-size:1.5em">
+$$D$$
+    </mathjax>
+</div>
+
+
+<div class="textbox" style="top: 60.77087904706464%;left: 75.60451465078441%;width: auto;height: auto;font-size: 1.5vw;">
+    <mathjax style="font-size:1.5em">
+$$\theta$$
+    </mathjax>
+</div>
+
+
+<div class="textbox" style="top: 39.50000000000002%;left: 66.38713373038976%;width: auto;height: auto;font-size: 1.5vw;">
+    <mathjax style="font-size:1.5em">
+$$r$$
+    </mathjax>
+</div>
+
+
+<div class="textbox" style="top: 33.25000000000001%;left: 5.9375%;width: 47.50%;height: 54.62%;font-size: 1.5vw;">
+    <mathjax style="font-size:1.5em">
 <!--
-+[H函数](,实例分析)
-+[设置结构](,实例分析)
-
-match_pts(M函数):...
-记住match_pts(节点)
-calibrationIP(M函数):...
-+[修改标题]"calibrationIP"(,calibration)
-
-13975场景:...
-13975场景的"分析场景"替换为"13975场景"
-+[新建阅读窗口](,13975场景)
++[H函数](,解释0)
 -->
 
-<h1>Method</h1>
-To calibrate the analysis, I used X-ray shadows. Both transverse and longitudinal positions of the source \((x_o,y_o)\) and the IP \((x_i,y_i)\) were adjusted in the calibrations. And both of them are necessary. <br>
-To evaluate the analysis accuracy, I calculated the launch angles for each shadows from positions and compared their distribution. And I also calculated the shadows of each fiducials based on a same launch angle to compare them with the real shadows. <br>
-<img src="res\fig1.png" width="1000"><br>
-(Scene and shadow projections)<br>
-The longitudinal position of the magnet was also adjusted. It was found that, that position would affect the angle distribution. <br>
-<br><br>
-
-<h1>13975 data</h1>
-<h2>Before calibration</h2>
-The parameters are, 
-$$
-x_o=-9.5\ cm,\ y_o=0\ cm,\ x_m=0\ cm,\ y_m=0\ cm
-\\
-x_{f1}=121.3\ cm,\ x_{f2}=172.1\ cm,\ x_i=273.3\ cm,\ y_m=0\ cm
-
-$$
-Here, the position of electron source, the magnet, the 1st set of fiducials, the 2nd set of fiducials and the image plate are \((x_o,y_o)\), \((x_m,y_m)\), \((x_{f1},y_{f1})\), \((x_{f2},y_{f2})\) and \((x_i,y_i)\)<br>
-<img src="res\fig2.png" width="1000"><br>
-<img src="res\fig2.1.png" width="1000"><br>
-(X-ray shadows)<br>
-<img src="res\fig3.png" width="1000"><br>
-(Energy-angle distribution)<br>
-<img src="res\fig4.png" width="1000"><br>
-<img src="res\fig4.1.png" width="1000"><br>
-(Shadow on the IP)<br>
-
-<h2>After calibration</h2>
-The parameters are, 
-$$
-x_o=-15.7\ cm,\ y_o=-0.63910\ cm,\ x_m=0\ cm,\ y_m=0\ cm
-\\
-x_{f1}=121.3\ cm,\ x_{f2}=172.1\ cm,\ x_i=265.1\ cm,\ y_m=0.18934\ cm
-
-$$
-<img src="res\fig5.png" width="1000"><br>
-<img src="res\fig5.1.png" width="1000"><br>
-(X-ray shadows)<br>
-<img src="res\fig6.png" width="1000"><br>
-(Energy-angle distribution)<br>
-<img src="res\fig7.png" width="1000"><br>
-<img src="res\fig7.1.png" width="1000"><br>
-(Shadow on the IP)<br>
-<br><br><br>
-
-<h1>Longitudinal calibration</h1>
-<h2>Without the calibration</h2>
-<img src="res\fig8.png" width="1000"><br>
-<img src="res\fig8.1.png" width="1000"><br>
-<h2>With the calibration</h2>
-<img src="res\fig5.png" width="1000"><br>
-<img src="res\fig5.1.png" width="1000"><br>
-<br><br><br>
-
-<h1>Magnet position calibration</h1>
-$$
-x_m=2\ cm
-$$
-<img src="res\fig10.png" width="1000"><br>
-<img src="res\fig10.1.png" width="1000"><br>
-$$
-x_m=0\ cm
-$$
-<img src="res\fig11.png" width="1000"><br>
-<img src="res\fig11.1.png" width="1000"><br>
-$$
-x_m=3.5\ cm
-$$
-<img src="res\fig12.png" width="1000"><br>
-<img src="res\fig12.1.png" width="1000"><br>
+The phase can be written as a function of \(x\), 
+$$\phi(x)=k\ \sqrt{x^{2}+z^{2}}\tag{1}$$
+The derivative of eq.(4) is,
+$$d\phi(x)=k\ \frac{x}{\sqrt{x^{2}+z^{2}}}\ dx\times 2\tag{2}$$
 
 <!--
-+[H函数](,实例分析)
-fig.12.1_(图片):
-+[设置结构](,fig.1_)
-
-实例分析=>的(实例分析,_re)->_re"fig"=>+的(_re,+宽)->+宽"1000"
-实例分析=>的(实例分析,宽度)=>+[del](,宽度)
-
-X校正(M函数):...
-+[新建阅读窗口](,X校正)
-
-<h2>match_pts(xo,yo,xf,yf,xs,ys)</h2>
-Match points (xf,yf) and (xs,ys), to make the lines from the point pairs gethered most tightly around one of the (xo,yo). <br>
-All (xs,ys) will be matched, while (xf,yf) are not necessary. 
-
+[1].(公式):...
+[2].(公式):...
 -->
-    </mathjax></p>
+    </mathjax>
 </div>
 
-<div class="footer">
-  <p>Footer</p>
+
+<div class="textbox" style="top: 4.749999999999999%;left: 5.9375%;width: 47.50%;height: 19.00%;font-size: 2.5vw;">
+    <mathjax style="font-size:1.5em">
+Diagram of the wavefront simulation
+    </mathjax>
 </div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class='cursor' id="cursor"></div>
+
+
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+</div>
+<div style="text-align:center">
+    <span id="index" style="color:white;">1</span>
+    <span style="color:white;">/1</span>
+</div>
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+var cursor = document.getElementById("cursor");
+document.body.addEventListener("mousemove", function(e) {
+  cursor.style.left = e.clientX + "px",
+    cursor.style.top = e.clientY + "px";
+});
+
+window.addEventListener("keydown", function (event) {
+  if (event.defaultPrevented) {
+    return; // Do nothing if the event was already processed
+  }
+
+  switch (event.key) {
+    case "Left": // IE/Edge specific value
+    case "ArrowLeft":
+      plusSlides(-1);
+      break;
+    case "Right": // IE/Edge specific value
+    case "ArrowRight":
+      plusSlides(1);
+      break;
+    default:
+      return; // Quit when this doesn't handle the key event.
+  }
+
+  // Cancel the default action to avoid it being handled twice
+  event.preventDefault();
+}, true);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = slides.length}    
+  if (n < 1) {slideIndex = 1}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+
+
+  var textIndex = document.getElementById("index");
+textIndex.textContent=slideIndex;
+}
+</script>
 
 </body>
 </html>
+
+
+
+<!--
+span
++[网页](web,文本框测试)
+-->
